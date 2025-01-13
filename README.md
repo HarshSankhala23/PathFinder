@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/655cbcee-f114-4a9c-875f-c43b1240f5dd)# PathFinder
+# PathFinder
 PathFinder is a modern, fast, and visually appealing directory and file fuzzing tool designed for penetration testers and bug bounty hunters. With real-time results, a beautiful progress bar, and multi-threaded execution, PathFinder makes it easy to discover hidden paths and files on a web server.
 
 
