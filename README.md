@@ -4,12 +4,12 @@ PathFinder is a modern, fast, and visually appealing directory and file fuzzing 
 
 ### 🔥 Features
 	
-  •	Multi-threaded Speed: Blazing-fast fuzzing with configurable thread support.
-	•	Real-Time Results: Instant display of discovered paths with HTTP status codes.
-	•	Modern UI: Sleek and colorful progress bar with percentage completion and elapsed time.
-	•	Customizable: Set thread count, request timeouts, and use any wordlist.
-	•	Error Handling: Resilient to network issues, ensuring smooth execution.
-	•	Lightweight: Minimal dependencies for quick setup and use
+- Multi-threaded Speed: Blazing-fast fuzzing with configurable thread support.
+- Real-Time Results: Instant display of discovered paths with HTTP status codes.
+- Modern UI: Sleek and colorful progress bar with percentage completion and elapsed time.
+- Customizable: Set thread count, request timeouts, and use any wordlist.
+- Error Handling: Resilient to network issues, ensuring smooth execution.
+- Lightweight: Minimal dependencies for quick setup and use
 
 #### Install Dependencies
 ```
@@ -17,7 +17,7 @@ pip3 install -r requirements.txt
 ```
 
 #### Usage
-````
+```
 git clone https://github.com/yourusername/pathfinder.git
 cd pathfinder
 
