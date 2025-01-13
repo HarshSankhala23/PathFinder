@@ -2,10 +2,28 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, BarColumn, TimeElapsedColumn, TextColumn
+from rich import print
 import argparse
 from urllib.parse import urljoin
 
+
 console = Console()
+
+banner = """
+
+ ██▓███   ▄▄▄     ▄▄▄█████▓ ██░ ██   █████▒██▓ ███▄    █ ▓█████▄ ▓█████  ██▀███  
+▓██░  ██▒▒████▄   ▓  ██▒ ▓▒▓██░ ██▒▓██   ▒▓██▒ ██ ▀█   █ ▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒
+▓██░ ██▓▒▒██  ▀█▄ ▒ ▓██░ ▒░▒██▀▀██░▒████ ░▒██▒▓██  ▀█ ██▒░██   █▌▒███   ▓██ ░▄█ ▒
+▒██▄█▓▒ ▒░██▄▄▄▄██░ ▓██▓ ░ ░▓█ ░██ ░▓█▒  ░░██░▓██▒  ▐▌██▒░▓█▄   ▌▒▓█  ▄ ▒██▀▀█▄  
+▒██▒ ░  ░ ▓█   ▓██▒ ▒██▒ ░ ░▓█▒░██▓░▒█░   ░██░▒██░   ▓██░░▒████▓ ░▒████▒░██▓ ▒██▒
+▒▓▒░ ░  ░ ▒▒   ▓▒█░ ▒ ░░    ▒ ░░▒░▒ ▒ ░   ░▓  ░ ▒░   ▒ ▒  ▒▒▓  ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░
+░▒ ░       ▒   ▒▒ ░   ░     ▒ ░▒░ ░ ░      ▒ ░░ ░░   ░ ▒░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░
+░░         ░   ▒    ░       ░  ░░ ░ ░ ░    ▒ ░   ░   ░ ░  ░ ░  ░    ░     ░░   ░ 
+               ░  ░         ░  ░  ░        ░           ░    ░       ░  ░   ░     
+                                                          ░                      
+
+"""
+console.print(banner, style="bold red")
 
 def fuzz_url(target_url, wordlist, threads, timeout):
     def check_url(path):
